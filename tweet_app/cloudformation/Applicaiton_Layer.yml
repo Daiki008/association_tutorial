@@ -104,11 +104,9 @@ Resources:
       Port: 80
       Protocol: HTTP
       Targets:
-        - Id:
-            Ref: testEC21a
+        - Id: !Ref testEC21a
           Port: 80
-        - Id:
-            Ref: testEC21c
+        - Id: !Ref testEC21c
           Port: 80
       VpcId: !ImportValue NetworkLayer-testVPC
       
